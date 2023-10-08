@@ -2,10 +2,10 @@
 
 source ./0_append_distro_path.sh
 
-untar_file zlib-1.2.11.tar
+untar_file zlib-1.3.tar
 
 cd /c/temp/gcc
-mv zlib-1.2.11 src
+mv zlib-1.3 src
 mkdir build dest
 cd build
 
@@ -20,8 +20,8 @@ ninja
 ninja install
 cd /c/temp/gcc
 rm -rf build src
-mv dest zlib-1.2.11
-cd zlib-1.2.11
+mv dest zlib-1.3
+cd zlib-1.3
 rm -rf bin lib/libz.dll.a share
 
-7z -mx0 a ../zlib-1.2.11.7z *
+7z -mx0 a ../zlib-1.3.7z *
