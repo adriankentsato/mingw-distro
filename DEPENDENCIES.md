@@ -11,3 +11,4 @@ Here are the URLs that my MinGW distro depends.
 * [gmp](https://ftp.gnu.org/gnu/gmp/gmp-6.3.0.tar.xz)
 
 [glbinding](https://github.com/cginternals/glbinding/archive/refs/tags/v3.3.0.tar.gz)
+[glfw](https://github.com/glfw/glfw/archive/refs/tags/3.3.8.tar.gz)
