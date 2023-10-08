@@ -35,6 +35,7 @@ You'll need to run them in MSYS2, which you can set up without an installer:
 
 The build scripts assume that:
 
+* Prior to executing these scripts you are running `msys2_shell.cmd -defterm -here -no-start -mingw64` or `mingw64.exe`
 * `C:\MinGW` contains the previous version of the distro.
   + This assumption is centralized in `0_append_distro_path.sh`, where it says `export X_DISTRO_ROOT=/c/mingw`.
 * `C:\Temp\gcc` is usable as a working directory.
