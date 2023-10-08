@@ -26,3 +26,4 @@ Here are the URLs that my MinGW distro depends.
 * [gcc](https://ftp.gnu.org/gnu/gcc/gcc-13.2.0/gcc-13.2.0.tar.xz)
 
 [optipng](https://nchc.dl.sourceforge.net/project/optipng/OptiPNG/optipng-0.7.7/optipng-0.7.7.tar.gz)
+[pcre](https://nchc.dl.sourceforge.net/project/pcre/pcre/8.45/pcre-8.45.tar.bz2)
