@@ -1,7 +1,7 @@
-diff -aurN coreutils-9.0/configure coreutils-9.0-fixed/configure
---- coreutils-9.0/configure	2021-09-24 05:37:03.000000000 -0700
-+++ coreutils-9.0-fixed/configure	2021-09-25 20:01:35.866043400 -0700
-@@ -52485,17 +52485,7 @@
+diff -aurN coreutils-9.4/configure coreutils-9.4-fixed/configure
+--- coreutils-9.4/configure	2023-08-29 21:37:00.000000000 +0800
++++ coreutils-9.4-fixed/configure	2023-10-08 08:26:55.786170300 +0800
+@@ -63070,17 +63070,7 @@
      esac
    fi
  
@@ -17,11 +17,11 @@ diff -aurN coreutils-9.0/configure coreutils-9.0-fixed/configure
      gl_cv_list_mounted_fs=no
 -  fi
  
-   if test $gl_cv_list_mounted_fs = yes; then
  
-diff -aurN coreutils-9.0/lib/c-strtod.c coreutils-9.0-fixed/lib/c-strtod.c
---- coreutils-9.0/lib/c-strtod.c	2021-09-24 04:32:44.000000000 -0700
-+++ coreutils-9.0-fixed/lib/c-strtod.c	2021-09-25 20:01:35.866043400 -0700
+      if test $gl_cv_list_mounted_fs = yes; then
+diff -aurN coreutils-9.4/lib/c-strtod.c coreutils-9.4-fixed/lib/c-strtod.c
+--- coreutils-9.4/lib/c-strtod.c	2023-01-01 21:39:11.000000000 +0800
++++ coreutils-9.4-fixed/lib/c-strtod.c	2023-10-08 08:26:55.907849200 +0800
 @@ -26,7 +26,7 @@
  #include <stdlib.h>
  #include <string.h>
@@ -58,9 +58,9 @@ diff -aurN coreutils-9.0/lib/c-strtod.c coreutils-9.0-fixed/lib/c-strtod.c
  
    r = STRTOD_L (nptr, endptr, locale);
  
-diff -aurN coreutils-9.0/lib/c-strtold.c coreutils-9.0-fixed/lib/c-strtold.c
---- coreutils-9.0/lib/c-strtold.c	2021-09-24 04:32:44.000000000 -0700
-+++ coreutils-9.0-fixed/lib/c-strtold.c	2021-09-25 20:01:35.866043400 -0700
+diff -aurN coreutils-9.4/lib/c-strtold.c coreutils-9.4-fixed/lib/c-strtold.c
+--- coreutils-9.4/lib/c-strtold.c	2023-01-01 21:39:11.000000000 +0800
++++ coreutils-9.4-fixed/lib/c-strtold.c	2023-10-08 08:26:55.920801400 +0800
 @@ -15,5 +15,5 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <https://www.gnu.org/licenses/>.  */
@@ -68,10 +68,10 @@ diff -aurN coreutils-9.0/lib/c-strtold.c coreutils-9.0-fixed/lib/c-strtold.c
 -#define LONG 1
 +#define LONGCAT 1
  #include "c-strtod.c"
-diff -aurN coreutils-9.0/lib/error.c coreutils-9.0-fixed/lib/error.c
---- coreutils-9.0/lib/error.c	2021-09-24 04:32:44.000000000 -0700
-+++ coreutils-9.0-fixed/lib/error.c	2021-09-25 20:01:35.866043400 -0700
-@@ -176,19 +176,7 @@
+diff -aurN coreutils-9.4/lib/error.c coreutils-9.4-fixed/lib/error.c
+--- coreutils-9.4/lib/error.c	2023-05-28 21:52:29.000000000 +0800
++++ coreutils-9.4-fixed/lib/error.c	2023-10-08 08:26:55.933603400 +0800
+@@ -175,19 +175,7 @@
  {
    char const *s;
  
@@ -91,9 +91,9 @@ diff -aurN coreutils-9.0/lib/error.c coreutils-9.0-fixed/lib/error.c
  
  #if !_LIBC
    if (! s)
-diff -aurN coreutils-9.0/lib/gethostname.c coreutils-9.0-fixed/lib/gethostname.c
---- coreutils-9.0/lib/gethostname.c	2021-09-24 04:32:44.000000000 -0700
-+++ coreutils-9.0-fixed/lib/gethostname.c	2021-09-25 20:01:35.881668100 -0700
+diff -aurN coreutils-9.4/lib/gethostname.c coreutils-9.4-fixed/lib/gethostname.c
+--- coreutils-9.4/lib/gethostname.c	2023-01-01 21:39:11.000000000 +0800
++++ coreutils-9.4-fixed/lib/gethostname.c	2023-10-08 08:26:55.947601200 +0800
 @@ -87,8 +87,9 @@
  #undef gethostname
  
@@ -105,10 +105,10 @@ diff -aurN coreutils-9.0/lib/gethostname.c coreutils-9.0-fixed/lib/gethostname.c
    int r;
  
    if (len > INT_MAX)
-diff -aurN coreutils-9.0/lib/unistd.in.h coreutils-9.0-fixed/lib/unistd.in.h
---- coreutils-9.0/lib/unistd.in.h	2021-09-24 04:32:44.000000000 -0700
-+++ coreutils-9.0-fixed/lib/unistd.in.h	2021-09-25 20:01:35.881668100 -0700
-@@ -1225,9 +1225,9 @@
+diff -aurN coreutils-9.4/lib/unistd.in.h coreutils-9.4-fixed/lib/unistd.in.h
+--- coreutils-9.4/lib/unistd.in.h	2023-04-30 04:40:27.000000000 +0800
++++ coreutils-9.4-fixed/lib/unistd.in.h	2023-10-08 08:26:55.962604100 +0800
+@@ -1295,9 +1295,9 @@
  #   undef gethostname
  #   define gethostname rpl_gethostname
  #  endif
@@ -120,9 +120,9 @@ diff -aurN coreutils-9.0/lib/unistd.in.h coreutils-9.0-fixed/lib/unistd.in.h
  # else
  #  if !@HAVE_GETHOSTNAME@
  _GL_FUNCDECL_SYS (gethostname, int, (char *name, size_t len)
-diff -aurN coreutils-9.0/lib/xstrtod.c coreutils-9.0-fixed/lib/xstrtod.c
---- coreutils-9.0/lib/xstrtod.c	2021-09-24 04:32:44.000000000 -0700
-+++ coreutils-9.0-fixed/lib/xstrtod.c	2021-09-25 20:01:35.881668100 -0700
+diff -aurN coreutils-9.4/lib/xstrtod.c coreutils-9.4-fixed/lib/xstrtod.c
+--- coreutils-9.4/lib/xstrtod.c	2023-01-01 21:39:11.000000000 +0800
++++ coreutils-9.4-fixed/lib/xstrtod.c	2023-10-08 08:26:55.977603500 +0800
 @@ -26,7 +26,7 @@
  #include <limits.h>
  #include <stdio.h>
@@ -132,9 +132,9 @@ diff -aurN coreutils-9.0/lib/xstrtod.c coreutils-9.0-fixed/lib/xstrtod.c
  # define XSTRTOD xstrtold
  # define DOUBLE long double
  #else
-diff -aurN coreutils-9.0/lib/xstrtold.c coreutils-9.0-fixed/lib/xstrtold.c
---- coreutils-9.0/lib/xstrtold.c	2021-09-24 04:32:44.000000000 -0700
-+++ coreutils-9.0-fixed/lib/xstrtold.c	2021-09-25 20:01:35.897294100 -0700
+diff -aurN coreutils-9.4/lib/xstrtold.c coreutils-9.4-fixed/lib/xstrtold.c
+--- coreutils-9.4/lib/xstrtold.c	2023-01-01 21:39:11.000000000 +0800
++++ coreutils-9.4-fixed/lib/xstrtold.c	2023-10-08 08:26:55.990615300 +0800
 @@ -15,5 +15,5 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <https://www.gnu.org/licenses/>.  */
@@ -142,18 +142,18 @@ diff -aurN coreutils-9.0/lib/xstrtold.c coreutils-9.0-fixed/lib/xstrtold.c
 -#define LONG 1
 +#define LONGCAT 1
  #include "xstrtod.c"
-diff -aurN coreutils-9.0/src/sort.c coreutils-9.0-fixed/src/sort.c
---- coreutils-9.0/src/sort.c	2021-09-24 04:31:05.000000000 -0700
-+++ coreutils-9.0-fixed/src/sort.c	2021-09-25 20:01:35.897294100 -0700
+diff -aurN coreutils-9.4/src/sort.c coreutils-9.4-fixed/src/sort.c
+--- coreutils-9.4/src/sort.c	2023-08-29 19:39:27.000000000 +0800
++++ coreutils-9.4-fixed/src/sort.c	2023-10-08 08:39:32.849146400 +0800
 @@ -26,7 +26,6 @@
  #include <pthread.h>
  #include <sys/resource.h>
  #include <sys/types.h>
 -#include <sys/wait.h>
  #include <signal.h>
- #include <assert.h>
  #include "system.h"
-@@ -468,8 +467,6 @@
+ #include "argmatch.h"
+@@ -469,8 +468,6 @@
    -c, --check, --check=diagnose-first  check for sorted input; do not sort\n\
    -C, --check=quiet, --check=silent  like -c, but do not report first bad line\
  \n\
@@ -162,7 +162,7 @@ diff -aurN coreutils-9.0/src/sort.c coreutils-9.0-fixed/src/sort.c
  "), stdout);
        fputs (_("\
        --debug               annotate the part of the line used to sort,\n\
-@@ -534,7 +531,6 @@
+@@ -535,7 +532,6 @@
  enum
  {
    CHECK_OPTION = CHAR_MAX + 1,
@@ -170,15 +170,15 @@ diff -aurN coreutils-9.0/src/sort.c coreutils-9.0-fixed/src/sort.c
    DEBUG_PROGRAM_OPTION,
    FILES0_FROM_OPTION,
    NMERGE_OPTION,
-@@ -549,7 +545,6 @@
+@@ -550,7 +546,6 @@
  {
-   {"ignore-leading-blanks", no_argument, NULL, 'b'},
-   {"check", optional_argument, NULL, CHECK_OPTION},
--  {"compress-program", required_argument, NULL, COMPRESS_PROGRAM_OPTION},
-   {"debug", no_argument, NULL, DEBUG_PROGRAM_OPTION},
-   {"dictionary-order", no_argument, NULL, 'd'},
-   {"ignore-case", no_argument, NULL, 'f'},
-@@ -709,21 +704,7 @@
+   {"ignore-leading-blanks", no_argument, nullptr, 'b'},
+   {"check", optional_argument, nullptr, CHECK_OPTION},
+-  {"compress-program", required_argument, nullptr, COMPRESS_PROGRAM_OPTION},
+   {"debug", no_argument, nullptr, DEBUG_PROGRAM_OPTION},
+   {"dictionary-order", no_argument, nullptr, 'd'},
+   {"ignore-case", no_argument, nullptr, 'f'},
+@@ -710,21 +705,7 @@
  static pid_t
  reap (pid_t pid)
  {
@@ -186,13 +186,13 @@ diff -aurN coreutils-9.0/src/sort.c coreutils-9.0-fixed/src/sort.c
 -  pid_t cpid = waitpid ((pid ? pid : -1), &status, (pid ? 0 : WNOHANG));
 -
 -  if (cpid < 0)
--    die (SORT_FAILURE, errno, _("waiting for %s [-d]"),
--         quoteaf (compress_program));
+-    error (SORT_FAILURE, errno, _("waiting for %s [-d]"),
+-           quoteaf (compress_program));
 -  else if (0 < cpid && (0 < pid || delete_proc (cpid)))
 -    {
 -      if (! WIFEXITED (status) || WEXITSTATUS (status))
--        die (SORT_FAILURE, 0, _("%s [-d] terminated abnormally"),
--             quoteaf (compress_program));
+-        error (SORT_FAILURE, 0, _("%s [-d] terminated abnormally"),
+-               quoteaf (compress_program));
 -      --nprocs;
 -    }
 -
@@ -201,7 +201,7 @@ diff -aurN coreutils-9.0/src/sort.c coreutils-9.0-fixed/src/sort.c
  }
  
  /* TEMP represents a new process; add it to the process table.  Create
-@@ -3759,7 +3740,7 @@
+@@ -3841,7 +3822,7 @@
        if (STREQ (files[i], "-"))
          continue;
  
@@ -210,7 +210,7 @@ diff -aurN coreutils-9.0/src/sort.c coreutils-9.0-fixed/src/sort.c
          sort_die (_("cannot read"), files[i]);
      }
  }
-@@ -4252,7 +4233,7 @@
+@@ -4330,7 +4311,7 @@
      static int const sig[] =
        {
          /* The usual suspects.  */
@@ -219,7 +219,7 @@ diff -aurN coreutils-9.0/src/sort.c coreutils-9.0-fixed/src/sort.c
  #ifdef SIGPOLL
          SIGPOLL,
  #endif
-@@ -4298,7 +4279,6 @@
+@@ -4376,7 +4357,6 @@
          }
  #endif
    }
@@ -227,40 +227,40 @@ diff -aurN coreutils-9.0/src/sort.c coreutils-9.0-fixed/src/sort.c
  
    /* The signal mask is known, so it is safe to invoke exit_cleanup.  */
    atexit (exit_cleanup);
-@@ -4423,12 +4403,6 @@
+@@ -4497,12 +4477,6 @@
            checkonly = c;
            break;
  
 -        case COMPRESS_PROGRAM_OPTION:
 -          if (compress_program && !STREQ (compress_program, optarg))
--            die (SORT_FAILURE, 0, _("multiple compress programs specified"));
+-            error (SORT_FAILURE, 0, _("multiple compress programs specified"));
 -          compress_program = optarg;
 -          break;
 -
          case DEBUG_PROGRAM_OPTION:
            debug = true;
            break;
-@@ -4773,8 +4747,8 @@
-     free (files);
- #endif
+@@ -4839,8 +4813,8 @@
+       sort (files, nfiles, outfile, nthreads);
+     }
  
 -  if (have_read_stdin && fclose (stdin) == EOF)
 -    sort_die (_("close failed"), "-");
 +  if (have_read_stdin)
 +    fclose (stdin);
  
-   return EXIT_SUCCESS;
+   main_exit (EXIT_SUCCESS);
  }
-diff -aurN coreutils-9.0/src/uniq.c coreutils-9.0-fixed/src/uniq.c
---- coreutils-9.0/src/uniq.c	2021-09-24 04:31:05.000000000 -0700
-+++ coreutils-9.0-fixed/src/uniq.c	2021-09-25 20:01:35.897294100 -0700
-@@ -457,9 +457,11 @@
+diff -aurN coreutils-9.4/src/uniq.c coreutils-9.4-fixed/src/uniq.c
+--- coreutils-9.4/src/uniq.c	2023-08-29 19:39:27.000000000 +0800
++++ coreutils-9.4-fixed/src/uniq.c	2023-10-08 08:40:41.809283000 +0800
+@@ -459,9 +459,11 @@
      }
  
   closefiles:
 -  if (ferror (stdin) || fclose (stdin) != 0)
 +  if (ferror (stdin))
-     die (EXIT_FAILURE, 0, _("error reading %s"), quoteaf (infile));
+     error (EXIT_FAILURE, errno, _("error reading %s"), quoteaf (infile));
  
 +  fclose (stdin);
 +
