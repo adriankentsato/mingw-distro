@@ -34,5 +34,7 @@ Here are the URLs that my MinGW distro depends.
 * [libvorbis](https://downloads.xiph.org/releases/vorbis/libvorbis-1.3.7.tar.xz)
 * [sdl_mixer](https://github.com/libsdl-org/SDL_mixer/archive/refs/tags/release-2.6.3.zip)
 * [vorbis-tools](https://downloads.xiph.org/releases/vorbis/vorbis-tools-1.4.2.tar.gz)
+
 [sed](https://ftp.gnu.org/gnu/sed/sed-4.9.tar.xz)
 [zlib](https://zlib.net/zlib-1.3.tar.xz)
+[zstd](https://github.com/facebook/zstd/archive/refs/tags/v1.5.5.zip)
