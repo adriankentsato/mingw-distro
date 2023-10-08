@@ -12,3 +12,4 @@ Here are the URLs that my MinGW distro depends.
 
 [glbinding](https://github.com/cginternals/glbinding/archive/refs/tags/v3.3.0.tar.gz)
 [glfw](https://github.com/glfw/glfw/archive/refs/tags/3.3.8.tar.gz)
+[glm](https://github.com/g-truc/glm/archive/refs/tags/0.9.9.8.tar.gz)
