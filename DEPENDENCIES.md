@@ -28,3 +28,4 @@ Here are the URLs that my MinGW distro depends.
 [optipng](https://nchc.dl.sourceforge.net/project/optipng/OptiPNG/optipng-0.7.7/optipng-0.7.7.tar.gz)
 [pcre](https://nchc.dl.sourceforge.net/project/pcre/pcre/8.45/pcre-8.45.tar.bz2)
 [pcre2](https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.42/pcre2-10.42.tar.gz)
+[pngcheck](http://libpng.org/pub/png/src/pngcheck-3.0.3.tar.gz)
