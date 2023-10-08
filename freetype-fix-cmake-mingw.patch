@@ -1,6 +1,6 @@
-diff -aurN freetype-2.11.0/CMakeLists.txt freetype-2.11.0-fixed/CMakeLists.txt
---- freetype-2.11.0/CMakeLists.txt	2021-07-17 22:47:31.000000000 -0700
-+++ freetype-2.11.0-fixed/CMakeLists.txt	2021-09-12 17:04:58.517113200 -0700
+diff -aurN freetype-2.13.0/CMakeLists.txt freetype-2.13.0-fixed/CMakeLists.txt
+--- freetype-2.13.0/CMakeLists.txt	2021-07-17 22:47:31.000000000 -0700
++++ freetype-2.13.0-fixed/CMakeLists.txt	2021-09-12 17:04:58.517113200 -0700
 @@ -240,7 +240,7 @@
  endif ()
  

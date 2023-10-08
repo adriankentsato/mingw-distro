@@ -2,12 +2,12 @@
 
 source ./0_append_distro_path.sh
 
-untar_file grep-3.7.tar
+untar_file grep-3.11.tar
 
 cd /c/temp/gcc
 mkdir -p dest/bin
 
-mv grep-3.7 src
+mv grep-3.11 src
 mkdir build
 cd build
 
@@ -19,7 +19,7 @@ mv src/grep.exe ../dest/bin
 cd /c/temp/gcc
 rm -rf build src
 
-mv dest grep-3.7
-cd grep-3.7
+mv dest grep-3.11
+cd grep-3.11
 
-7z -mx0 a ../grep-3.7.7z *
+7z -mx0 a ../grep-3.11.7z *
