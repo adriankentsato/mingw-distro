@@ -17,3 +17,4 @@ Here are the URLs that my MinGW distro depends.
 [lame](https://nchc.dl.sourceforge.net/project/lame/lame/3.100/lame-3.100.tar.gz)
 [libjpeg-turbo](https://nchc.dl.sourceforge.net/project/libjpeg-turbo/3.0.0/libjpeg-turbo-3.0.0.tar.gz)
 [libpng](https://nchc.dl.sourceforge.net/project/libpng/libpng16/1.6.40/libpng-1.6.40.tar.xz)
+[make](https://ftp.gnu.org/gnu/make/make-4.4.1.tar.gz)
