@@ -15,3 +15,4 @@ Here are the URLs that my MinGW distro depends.
 [glm](https://github.com/g-truc/glm/archive/refs/tags/0.9.9.8.tar.gz)
 [grep](https://ftp.gnu.org/gnu/grep/grep-3.11.tar.xz)
 [lame](https://nchc.dl.sourceforge.net/project/lame/lame/3.100/lame-3.100.tar.gz)
+[libjpeg-turbo](https://nchc.dl.sourceforge.net/project/libjpeg-turbo/3.0.0/libjpeg-turbo-3.0.0.tar.gz)
