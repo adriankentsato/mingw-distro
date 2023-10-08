@@ -24,3 +24,5 @@ Here are the URLs that my MinGW distro depends.
 * [mpc](https://ftp.gnu.org/gnu/mpc/mpc-1.3.1.tar.gz)
 * [isl](https://libisl.sourceforge.io/isl-0.26.tar.xz)
 * [gcc](https://ftp.gnu.org/gnu/gcc/gcc-13.2.0/gcc-13.2.0.tar.xz)
+
+[optipng](https://nchc.dl.sourceforge.net/project/optipng/OptiPNG/optipng-0.7.7/optipng-0.7.7.tar.gz)
