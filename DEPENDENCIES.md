@@ -9,3 +9,5 @@ Here are the URLs that my MinGW distro depends.
 [freetype](https://download.savannah.gnu.org/releases/freetype/freetype-2.13.2.tar.xz)
 [gdb](https://ftp.gnu.org/gnu/gdb/gdb-13.2.tar.xz)
 * [gmp](https://ftp.gnu.org/gnu/gmp/gmp-6.3.0.tar.xz)
+
+[glbinding](https://github.com/cginternals/glbinding/archive/refs/tags/v3.3.0.tar.gz)
