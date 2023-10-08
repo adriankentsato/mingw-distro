@@ -14,3 +14,4 @@ Here are the URLs that my MinGW distro depends.
 [glfw](https://github.com/glfw/glfw/archive/refs/tags/3.3.8.tar.gz)
 [glm](https://github.com/g-truc/glm/archive/refs/tags/0.9.9.8.tar.gz)
 [grep](https://ftp.gnu.org/gnu/grep/grep-3.11.tar.xz)
+[lame](https://nchc.dl.sourceforge.net/project/lame/lame/3.100/lame-3.100.tar.gz)
