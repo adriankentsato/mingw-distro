@@ -29,3 +29,8 @@ Here are the URLs that my MinGW distro depends.
 [pcre](https://nchc.dl.sourceforge.net/project/pcre/pcre/8.45/pcre-8.45.tar.bz2)
 [pcre2](https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.42/pcre2-10.42.tar.gz)
 [pngcheck](http://libpng.org/pub/png/src/pngcheck-3.0.3.tar.gz)
+[sdl](https://github.com/libsdl-org/SDL/archive/refs/tags/release-2.28.4.tar.gz)
+* [libogg](https://downloads.xiph.org/releases/ogg/libogg-1.3.5.tar.xz)
+* [libvorbis](https://downloads.xiph.org/releases/vorbis/libvorbis-1.3.7.tar.xz)
+* [sdl_mixer](https://github.com/libsdl-org/SDL_mixer/archive/refs/tags/release-2.6.3.zip)
+* [vorbis-tools](https://downloads.xiph.org/releases/vorbis/vorbis-tools-1.4.2.tar.gz)
