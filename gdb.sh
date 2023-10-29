@@ -2,13 +2,13 @@
 
 source ./0_append_distro_path.sh
 
-untar_file gdb-11.1.tar
-untar_file gmp-6.2.1.tar
+untar_file gdb-13.2.tar
+untar_file gmp-6.3.0.tar
 
 cd /c/temp/gcc
 
 # Build gmp.
-mv gmp-6.2.1 src-gmp
+mv gmp-6.3.0 src-gmp
 mkdir build-gmp dest-gmp
 cd build-gmp
 
@@ -22,7 +22,7 @@ rm -rf build-gmp src-gmp
 rm -rf dest-gmp/lib/*.la dest-gmp/lib/pkgconfig dest-gmp/share
 
 # Build gdb.
-mv gdb-11.1 src
+mv gdb-13.2 src
 mkdir build dest
 cd build
 
@@ -38,8 +38,8 @@ make $X_MAKE_JOBS all \
 make $X_MAKE_JOBS install
 cd /c/temp/gcc
 rm -rf build src dest-gmp
-mv dest gdb-11.1
-cd gdb-11.1
+mv dest gdb-13.2
+cd gdb-13.2
 rm -rf bin/gdb-add-index include lib share
 
-7z -mx0 a ../gdb-11.1.7z *
+7z -mx0 a ../gdb-13.2.7z *

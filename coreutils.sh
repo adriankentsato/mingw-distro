@@ -2,12 +2,12 @@
 
 source ./0_append_distro_path.sh
 
-untar_file coreutils-9.0.tar
+untar_file coreutils-9.4.tar
 
-patch -d /c/temp/gcc/coreutils-9.0 -p1 < coreutils.patch
+patch -d /c/temp/gcc/coreutils-9.4 -p1 < coreutils.patch
 
 cd /c/temp/gcc
-mv coreutils-9.0 src
+mv coreutils-9.4 src
 mkdir -p build dest/bin
 
 # Missing <sys/wait.h>.
@@ -35,7 +35,7 @@ cd src
 mv sort.exe uniq.exe wc.exe ../../dest/bin
 cd /c/temp/gcc
 rm -rf build src
-mv dest coreutils-9.0
-cd coreutils-9.0
+mv dest coreutils-9.4
+cd coreutils-9.4
 
-7z -mx0 a ../coreutils-9.0.7z *
+7z -mx0 a ../coreutils-9.4.7z *

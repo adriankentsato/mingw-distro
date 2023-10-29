@@ -3,19 +3,17 @@
 source ./0_append_distro_path.sh
 
 # Extract vanilla sources.
-untar_file gmp-6.2.1.tar
-untar_file mpfr-4.1.0.tar
-untar_file mpc-1.2.1.tar
-untar_file isl-0.24.tar
-untar_file mingw-w64-v9.0.0.tar
-untar_file gcc-11.2.0.tar
-
-patch -Z -d /c/temp/gcc/mpfr-4.1.0 -p1 < mpfr-4.1.0-p13.patch
+untar_file gmp-6.3.0.tar
+untar_file mpfr-4.2.1.tar
+untar_file mpc-1.3.1.tar
+untar_file isl-0.26.tar
+untar_file mingw-w64-v11.0.1.tar
+untar_file gcc-13.2.0.tar
 
 cd /c/temp/gcc
 
 # Build mingw-w64 and winpthreads.
-mv mingw-w64-v9.0.0 src
+mv mingw-w64-v11.0.1 src
 mkdir build-mingw-w64 dest
 cd build-mingw-w64
 
@@ -36,11 +34,11 @@ cd /c/temp/gcc
 rm -rf build-mingw-w64 src
 
 # Prepare to build gcc.
-mv gcc-11.2.0 src
-mv gmp-6.2.1 src/gmp
-mv mpfr-4.1.0 src/mpfr
-mv mpc-1.2.1 src/mpc
-mv isl-0.24 src/isl
+mv gcc-13.2.0 src
+mv gmp-6.3.0 src/gmp
+mv mpfr-4.2.1 src/mpfr
+mv mpc-1.3.1 src/mpc
+mv isl-0.26 src/isl
 
 # Prepare to build gcc - perform magic directory surgery.
 cp -r dest/x86_64-w64-mingw32/lib dest/x86_64-w64-mingw32/lib64
